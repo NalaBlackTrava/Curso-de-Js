@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTRAN DOS CRIA</title>
+    <style>
+        body {
+            background: rgb(238, 176, 106);
+            font: normal 15pt Courier;
+        }
+        div#res {
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel')
+            var res =  document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p> Sua velo é de <strong>${vel} Km/h</strong></p>`
+                if (vel > 60 ) {
+                    res.innerHTML += `<p>Teje <strong>MULTADO</strong>!</p> <p>Tá achando q é o Hamilton meu parceiro?</p>`
+                }
+        }
+    </script>
+    
+</body>
+</html>
