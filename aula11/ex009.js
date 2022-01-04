@@ -4,4 +4,3 @@ if (país == 'Brasil') {
     console.log('Ih, ce é Brasilere kkkkkkk, vida ganha nada, tá fudide menó.')
 } else {
     console.log('Gringo é fda')
-}

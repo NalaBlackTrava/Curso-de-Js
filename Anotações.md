@@ -1,4 +1,4 @@
-= -> recebe
+= ->recebe
 
 COMENTÁRIOS
 	

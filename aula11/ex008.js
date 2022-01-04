@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var vel = 42
 console.log(`A velo do seu carro é ${vel}km/h`)
 if (vel > 60) {
