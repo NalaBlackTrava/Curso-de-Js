@@ -33,25 +33,21 @@
 
 <body>
     <h1>Ce vem de onde menó?</h1>
-    Pia o seu <span class=" italic"> país</span>, onde fica a tua goma: <input type="text" name="txtlugar" id="txtlugar">
+    Pia o seu <span class=" italic"> país</span>, onde fica a tua goma: <input type="text" id="txtlugar">
     <input type="button" class="btn" value="Verificar" onclick="calcular()">
     <div id="res"></div>
-
     <script>
-
         function calcular()
         {
-            var txtc = document.querySelector('input#txtlugar')
+            var lugar = document.querySelector('input#txtlugar')
             var res = document.querySelector('div#res')
-            var lugar = Text(txtc.value)
-            res.innerHTML = `<p> Vida ganha né? Vivendo no ${lugar} ¯\_( ͠❛ ʖ ͠❛)_/¯ </p>`
-            if (lugar === `Brasil` ) {
+            res.innerHTML = `<p> Vida ganha né? Vivendo no <strong>${lugar}</strong> ¯\_( ͠❛ ͜ʖ ͠❛ )_/¯ </p>`
+            if (lugar == `Brasil` ) {
                 res.innerHTML += `<p> Ih, ce é Brasilere kkkkkkk, vida ganha nada, tá fudidin, papo reto. </p>`
             } else {
                 res.innerHTML += `<p> Gringo é fda </p>`
             }
         }
-
     </script>
     
 </body>
