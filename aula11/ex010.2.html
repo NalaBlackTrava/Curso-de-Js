@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pra gringo é mais caro?</title>
+    
+    <style>
+
+        body
+        {
+            background: rgb(233, 165, 250);
+            font: normal 16pt Helvetica;
+            color: rgb(190, 12, 182);
+        }
+
+        .btn /* Bordinha fofa pro botão */
+        {
+            border-radius: 100px;
+            background-color:rgb(190, 12, 182); 
+        }  
+            
+        .italic
+        { 
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Ce vem de onde menó?</h1>
+    Pia o seu <span class=" italic"> país</span>, onde fica a tua goma: <input type="text" name="txtlugar" id="txtlugar">
+    <input type="button" class="btn" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+
+        function calcular()
+        {
+            var txtc = document.querySelector('input#txtlugar')
+            var res = document.querySelector('div#res')
+            var lugar = Text(txtc.value)
+            res.innerHTML = `<p> Vida ganha né? Vivendo no ${lugar} ¯\_( ͠❛ ʖ ͠❛)_/¯ </p>`
+            if (lugar === `Brasil` ) {
+                res.innerHTML += `<p> Ih, ce é Brasilere kkkkkkk, vida ganha nada, tá fudidin, papo reto. </p>`
+            } else {
+                res.innerHTML += `<p> Gringo é fda </p>`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
